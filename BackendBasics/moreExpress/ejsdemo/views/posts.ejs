@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<link rel="stylesheet" href="app.css">
+
+<h1> This is the posts page</h1>
+
+
+<% posts.forEach(function(post){ %>
+<li> <%= post.title  %> - <strong> <%= post.author %> </strong> </li>
+<% }) %>
+
+<%- include("partials/footer") %>
